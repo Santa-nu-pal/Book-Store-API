@@ -9,7 +9,7 @@ This is a RESTful API for managing books in a bookstore. The API allows users to
 You can test the API live using the following URL:
 
 
-> Replace `<your-deployment-url>` with your actual deployed URL.
+https://book-store-api-1-9fmp.onrender.com
 
 ---
 
@@ -75,7 +75,7 @@ Login a User:-
     Response: Returns JWT token which you have to add to the bearer Authorization
 ------------------------------------------------
  -Get All Books (with Pagination & Sorting)
-    GET /api/books?page=1&limit=5&sortBy=price
+    GET /api/books?page=1&limit=5&sort=Price&order=asc(write this if you want to get the 1st page with 5 books sorted in ascending order by Price field)
 
 Query Params:-
 
@@ -112,7 +112,7 @@ sortBy: price or rating
     -Delete a Book
             DELETE /api/books/:id
 
-------------------------------------------------
+------------------------------------------------a
 
 
  Project Structure

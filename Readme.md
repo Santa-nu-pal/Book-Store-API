@@ -57,7 +57,7 @@ That’s it — the backend will start on port 5000.
 
 API Endpoints:-
 
- - Register a User -> POST /api/users/register
+ - Register a User -> POST /api/auth/register
   - Body: 
           {
              "email": "testuser@gmail.com",
@@ -66,13 +66,13 @@ API Endpoints:-
 ----------------------------------------------------
 Login a User:- 
 
- -POST /api/users/login
+ -POST /api/auth/login
     Body: 
           {
              "email": "testuser@gmail.com",
              "password": "testuser"
           }
-    Response: Returns JWT token
+    Response: Returns JWT token which you have to add to the bearer Authorization
 ------------------------------------------------
  -Get All Books (with Pagination & Sorting)
     GET /api/books?page=1&limit=5&sortBy=price
